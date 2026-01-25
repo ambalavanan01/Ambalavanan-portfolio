@@ -24,7 +24,7 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 ├── index.html      # Main HTML file
 ├── style.css       # Main stylesheet
 ├── script.js       # JavaScript file for interactivity
-├── profile.jpg     # Profile image
+├── profile.png     # Profile image
 ├── crisis.png      # Project image
 ├── e-voting.png    # Project image
 ├── onlinequiz.png  # Project image
@@ -53,3 +53,4 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 
 ---
 © 2026 Ambalavanan. All rights reserved.
+
