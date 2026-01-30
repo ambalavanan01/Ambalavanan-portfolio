@@ -4,14 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambalavanan</title>
+    <meta name="description"
+        content="Portfolio of Ambalavanan, a Full-Stack Developer specializing in clean, functional, and scalable web applications using HTML, CSS, JavaScript, Java, and Python.">
+    <meta name="keywords"
+        content="Ambalavanan, Full Stack Developer, Web Developer, Portfolio, Java, Python, HTML, CSS, JavaScript, Crisis Response, Blockchain">
+    <meta name="author" content="Ambalavanan">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ambalavanan - Full Stack Developer">
+    <meta property="og:description"
+        content="Building clean, functional, and scalable web applications. View my projects and skills.">
+    <meta property="og:image" content="profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Ambalavanan - Full Stack Developer">
+    <meta property="twitter:description"
+        content="Building clean, functional, and scalable web applications. View my projects and skills.">
+    <meta property="twitter:image" content="profile.png">
+
+    <title>Ambalavanan | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <a href="#home" class="logo">Ambalavanan</a>
         <button class="menu-toggle" aria-label="Open menu">☰</button>
         <div class="header-right">
@@ -19,17 +39,17 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <button type="button" onclick="location.href='#Contact'">Contact</button>
+            <button type="button" onclick="location.href='#contact'">Contact</button>
         </div>
         <div class="popup-menu">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <button onclick="location.href='#Contact'">Contact</button>
+            <button onclick="location.href='#contact'">Contact</button>
         </div>
-    </div>
-    <div class="hero" id="home">
+    </header>
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>Hi, I'm <span>Ambalavanan</span></h1>
             <p>
@@ -43,10 +63,10 @@
         </div>
 
         <div class="hero-image">
-            <img src="profile.png" alt="Profile Image">
+            <img src="profile.png" alt="Ambalavanan Profile Picture">
         </div>
-    </div>
-    <div id="about" class="about">
+    </section>
+    <section id="about" class="about">
         <div class="about-container">
             <div class="about-visual">
                 <div class="developer-animation">
@@ -55,7 +75,7 @@
                 </div>
             </div>
             <div class="about-text">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
                 <p>
                     I’m a developer who focuses on building clean, functional, and scalable web applications.
                     I work primarily with HTML, CSS, and JavaScript, and I care more about clarity, performance,
@@ -85,333 +105,336 @@
                 </a>
             </div>
         </div>
-    </div>
-    <div id="skills" class="skills">
-        <div class="skills-container">
-            <h1 class="section-title">Technical Expertise</h1>
-            <p class="section-subtitle">A collection of tools and technologies I use to bring ideas to life.</p>
-            <div class="skills-categories">
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="category-grid">
-                        <div class="skill-card" data-skill="Java">
-                            <div class="skill-icon">
-                                <i class="devicon-java-plain colored"></i>
+        </div>
+        <section id="skills" class="skills">
+            <div class="skills-container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">A collection of tools and technologies I use to bring ideas to life.</p>
+                <div class="skills-categories">
+                    <!-- Programming Languages -->
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="category-grid">
+                            <div class="skill-card" data-skill="Java">
+                                <div class="skill-icon">
+                                    <i class="devicon-java-plain colored"></i>
+                                </div>
+                                <span>Java</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
                             </div>
-                            <span>Java</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 90%"></div>
+                            <div class="skill-card" data-skill="Python">
+                                <div class="skill-icon">
+                                    <i class="devicon-python-plain colored"></i>
+                                </div>
+                                <span>Python</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="C++">
+                                <div class="skill-icon">
+                                    <i class="devicon-cplusplus-plain colored"></i>
+                                </div>
+                                <span>C++</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="C">
+                                <div class="skill-icon">
+                                    <i class="devicon-c-plain colored"></i>
+                                </div>
+                                <span>C</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="Solidity">
+                                <div class="skill-icon">
+                                    <i class="devicon-solidity-plain colored"></i>
+                                </div>
+                                <span>Solidity</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-card" data-skill="Python">
-                            <div class="skill-icon">
-                                <i class="devicon-python-plain colored"></i>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <div class="category-grid">
+                            <div class="skill-card" data-skill="HTML">
+                                <div class="skill-icon">
+                                    <i class="devicon-html5-plain colored"></i>
+                                </div>
+                                <span>HTML</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
                             </div>
-                            <span>Python</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 85%"></div>
+                            <div class="skill-card" data-skill="CSS">
+                                <div class="skill-icon">
+                                    <i class="devicon-css3-plain colored"></i>
+                                </div>
+                                <span>CSS</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="JavaScript">
+                                <div class="skill-icon">
+                                    <i class="devicon-javascript-plain colored"></i>
+                                </div>
+                                <span>JavaScript</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-card" data-skill="C++">
-                            <div class="skill-icon">
-                                <i class="devicon-cplusplus-plain colored"></i>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="category-grid">
+                            <div class="skill-card" data-skill="Git">
+                                <div class="skill-icon">
+                                    <i class="devicon-git-plain colored"></i>
+                                </div>
+                                <span>Git</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
                             </div>
-                            <span>C++</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 80%"></div>
+                            <div class="skill-card" data-skill="GitHub">
+                                <div class="skill-icon">
+                                    <i class="devicon-github-original colored"></i>
+                                </div>
+                                <span>GitHub</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-card" data-skill="C">
-                            <div class="skill-icon">
-                                <i class="devicon-c-plain colored"></i>
+                    </div>
+
+                    <!-- Core Concepts -->
+                    <div class="skill-category">
+                        <h3>Core Concepts</h3>
+                        <div class="category-grid">
+                            <div class="skill-card" data-skill="DSA">
+                                <div class="skill-icon">
+                                    <i class="devicon-c-plain colored"></i>
+                                </div>
+                                <span>DSA</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
                             </div>
-                            <span>C</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 75%"></div>
+                            <div class="skill-card" data-skill="DBMS">
+                                <div class="skill-icon">
+                                    <i class="devicon-mysql-plain colored"></i>
+                                </div>
+                                <span>DBMS</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-card" data-skill="Solidity">
-                            <div class="skill-icon">
-                                <i class="devicon-solidity-plain colored"></i>
+                            <div class="skill-card" data-skill="SQL">
+                                <div class="skill-icon">
+                                    <i class="devicon-postgresql-plain colored"></i>
+                                </div>
+                                <span>SQL</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
                             </div>
-                            <span>Solidity</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 70%"></div>
+                            <div class="skill-card" data-skill="OOP">
+                                <div class="skill-icon">
+                                    <i class="devicon-java-plain colored"></i>
+                                </div>
+                                <span>OOP</span>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Web Technologies -->
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="category-grid">
-                        <div class="skill-card" data-skill="HTML">
-                            <div class="skill-icon">
-                                <i class="devicon-html5-plain colored"></i>
-                            </div>
-                            <span>HTML</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="CSS">
-                            <div class="skill-icon">
-                                <i class="devicon-css3-plain colored"></i>
-                            </div>
-                            <span>CSS</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="JavaScript">
-                            <div class="skill-icon">
-                                <i class="devicon-javascript-plain colored"></i>
-                            </div>
-                            <span>JavaScript</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="projects-heading">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="crisis.png" alt="Crisis Response Command Center Interface" />
+                    <h3>Crisis Response Management</h3>
+                    <div class="project-buttons">
+                        <a href="https://github.com/ambalavanan01/crisis-response-command-center"
+                            class="project-btn github-btn-card" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://crisis-management.netlify.app/" class="project-btn live-btn-card"
+                            target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
                     </div>
                 </div>
 
-                <!-- Tools & Platforms -->
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="category-grid">
-                        <div class="skill-card" data-skill="Git">
-                            <div class="skill-icon">
-                                <i class="devicon-git-plain colored"></i>
-                            </div>
-                            <span>Git</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="GitHub">
-                            <div class="skill-icon">
-                                <i class="devicon-github-original colored"></i>
-                            </div>
-                            <span>GitHub</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 90%"></div>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <img src="sketextiles.png" alt="SKE Textiles Website Interface" />
+                    <h3>SKE Textiles</h3>
+                    <div class="project-buttons">
+                        <a href="https://github.com/ambalavanan01/ske-text" class="project-btn github-btn-card"
+                            target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://ske-textiles.netlify.app/" class="project-btn live-btn-card" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
                     </div>
                 </div>
 
-                <!-- Core Concepts -->
-                <div class="skill-category">
-                    <h3>Core Concepts</h3>
-                    <div class="category-grid">
-                        <div class="skill-card" data-skill="DSA">
-                            <div class="skill-icon">
-                                <i class="devicon-c-plain colored"></i>
-                            </div>
-                            <span>DSA</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="DBMS">
-                            <div class="skill-icon">
-                                <i class="devicon-mysql-plain colored"></i>
-                            </div>
-                            <span>DBMS</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="SQL">
-                            <div class="skill-icon">
-                                <i class="devicon-postgresql-plain colored"></i>
-                            </div>
-                            <span>SQL</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="OOP">
-                            <div class="skill-icon">
-                                <i class="devicon-java-plain colored"></i>
-                            </div>
-                            <span>OOP</span>
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 90%"></div>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <img src="e-voting.png" alt="E-Voting Blockchain Application Interface" />
+                    <h3>E-Voting Using Blockchain</h3>
+                    <div class="project-buttons">
+                        <a href="https://github.com/ambalavanan01/E-Voting-using-Blockchain"
+                            class="project-btn github-btn-card" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://e-vote-blockchain.netlify.app/" class="project-btn live-btn-card"
+                            target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="onlinequiz.png" alt="Online Quiz Management Dashboard" />
+                    <h3>Online quiz Management</h3>
+                    <div class="project-buttons">
+                        <a href="https://github.com/ambalavanan01/Online-Quiz-management"
+                            class="project-btn github-btn-card" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://onlinequiz-management.gt.tc/" class="project-btn live-btn-card"
+                            target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="projects" id="projects">
-        <h1 class="projects-heading">My Projects</h1>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="crisis.png" alt="Crisis Response Command Center" />
-                <h3>Crisis Response Management</h3>
-                <div class="project-buttons">
-                    <a href="https://github.com/ambalavanan01/crisis-response-command-center"
-                        class="project-btn github-btn-card" target="_blank">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                    <a href="https://crisis-management.netlify.app/" class="project-btn live-btn-card" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                </div>
             </div>
 
-            <div class="project-card">
-                <img src="sketextiles.png" alt="SKE Textiles" />
-                <h3>SKE Textiles</h3>
-                <div class="project-buttons">
-                    <a href="https://github.com/ambalavanan01/ske-text" class="project-btn github-btn-card"
-                        target="_blank">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                    <a href="https://ske-textiles.netlify.app/" class="project-btn live-btn-card" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                </div>
-            </div>
+            <section class="contact" id="contact">
+                <h2 class="contact-text">Contact Me</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h2>Send us a message</h2>
+                        <p class="subtitle">
+                            Do you have a question or You need my help. Just fill the form
+                        </p>
 
-            <div class="project-card">
-                <img src="e-voting.png" alt="Project 3" />
-                <h3>E-Voting Using Blockchain</h3>
-                <div class="project-buttons">
-                    <a href="https://github.com/ambalavanan01/E-Voting-using-Blockchain" class="project-btn github-btn-card" target="_blank">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                    <a href="https://e-vote-blockchain.netlify.app/" class="project-btn live-btn-card" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="onlinequiz.png" alt="Project 4" />
-                <h3>Online quiz Management</h3>
-                <div class="project-buttons">
-                    <a href="https://github.com/ambalavanan01/Online-Quiz-management" class="project-btn github-btn-card" target="_blank">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                    <a href="https://onlinequiz-management.gt.tc/" class="project-btn live-btn-card" target="_blank">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <form id="contactForm" action="https://formspree.io/f/mrepwolr" method="POST" novalidate>
+                            <input type="text" name="company" tabindex="-1" autocomplete="off" hidden>
 
-    <section class="contact">
-        <h1 class="contact-text">Contact Me</h1>
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <h2>Send us a message</h2>
-                <p class="subtitle">
-                    Do you have a question or You need my help. Just fill the form
-                </p>
-
-                <form action="https://formspree.io/f/mrepwolr" method="POST">
-                    <form id="contactForm" novalidate>
-                        <input type="text" name="company" tabindex="-1" autocomplete="off" hidden>
-
-                        <div class="row">
-                            <input type="text" name="firstName" placeholder="First Name" required>
-                            <input type="text" name="lastName" placeholder="Last Name" required>
-                        </div>
-
-                        <div class="row">
-                            <input type="email" name="email" placeholder="Email" required>
-                            <div class="phone">
-                                <span>+91</span>
-                                <input type="tel" name="phone" placeholder="Contact Number" required>
+                            <div class="row">
+                                <input type="text" name="firstName" placeholder="First Name" required>
+                                <input type="text" name="lastName" placeholder="Last Name" required>
                             </div>
+
+                            <div class="row">
+                                <input type="email" name="email" placeholder="Email" required>
+                                <div class="phone">
+                                    <span>+91</span>
+                                    <input type="tel" name="phone" placeholder="Contact Number" required>
+                                </div>
+                            </div>
+
+                            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+                            <button type="submit">Send Message</button>
+                            <button type="reset">Clear</button>
+                            <p id="formStatus" class="form-status"></p>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Hi! We are always here to help you.</h3>
+
+                        <div class="info-box">
+                            <strong>📞 Voice Call</strong>
+                            <p>+91 9894797490</p>
                         </div>
 
-                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        <div class="info-box">
+                            <strong>💬 SMS / WhatsApp</strong>
+                            <p>+91 9894797490</p>
+                        </div>
 
-                        <button type="submit">Send Message</button>
-                        <button type="reset">Clear</button>
-                        <p id="formStatus" class="form-status"></p>
-                    </form>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h3>Hi! We are always here to help you.</h3>
+                        <div class="info-box">
+                            <strong>✉️ Email</strong>
+                            <p>nikeshshivan12@gmail.com</p>
+                            <p>ambalavanan275@gmail.com</p>
+                        </div>
 
-                <div class="info-box">
-                    <strong>📞 Voice Call</strong>
-                    <p>+91 9894797490</p>
+                        <div class="socials">
+                            <a href="https://github.com/ambalavanan01/" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/ambalavananm/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/iam_ambalavanan/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer-container">
+
+                    <div class="footer-brand">
+                        <h3>Ambalavanan</h3>
+                        <p>Full-Stack Developer</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="https://github.com/ambalavanan01/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ambalavananm/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/iam_ambalavanan/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
                 </div>
 
-                <div class="info-box">
-                    <strong>💬 SMS / WhatsApp</strong>
-                    <p>+91 9894797490</p>
+                <div class="footer-bottom">
+                    © 2026 Ambalavanan. All rights reserved.
                 </div>
-
-                <div class="info-box">
-                    <strong>✉️ Email</strong>
-                    <p>nikeshshivan12@gmail.com</p>
-                    <p>ambalavanan275@gmail.com</p>
-                </div>
-
-                <div class="socials">
-                    <a href="https://github.com/ambalavanan01/" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/ambalavananm/" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/iam_ambalavanan/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-container">
-
-            <div class="footer-brand">
-                <h3>Ambalavanan</h3>
-                <p>Full-Stack Developer</p>
-            </div>
-
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <div class="footer-social">
-                <a href="https://github.com/ambalavanan01/" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/ambalavananm/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-                <a href="https://www.instagram.com/iam_ambalavanan/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            © 2026 Ambalavanan. All rights reserved.
-        </div>
-    </footer>
-    <script src="script.js"></script>
+            </footer>
+            <script src="script.js"></script>
 </body>
 
 </html>
